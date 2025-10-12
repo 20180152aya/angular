@@ -1,0 +1,12 @@
+<div class="container">
+     <h1>{{ 'welcome to our shop!' | uppercase }}</h1>
+    <img src="images/logo.png" alt="" width="200" height="200">
+
+     <ng-container *ngIf="sale; else noSale">
+    <div class="bg-black text-white p-3 w-100 text-center">Sale is on</div>
+  </ng-container>
+
+  <ng-template #noSale>
+    <div class="bg-danger text-white p-3 w-100 text-center">Sale is off</div>
+  </ng-template>
+</div>

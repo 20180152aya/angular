@@ -1,0 +1,25 @@
+<h2>Products</h2>
+<!-- <ul>
+  <li *ngFor="let p of products">
+    <a [routerLink]="[p.id]">
+      {{ p.name }} — {{ p.price | currency:'EGP' }}
+    </a>
+  </li>
+</ul> -->
+
+
+<div class="card">
+  <div class="card-header text-center p-3 bg-dark text-white">
+    My Products
+  </div>
+  <div class="card-body">
+    <div *ngFor="let p of products" class="product-card mb-3 p-3 border rounded shadow-sm bg-dark text-white">
+      <h5 class="card-title">{{ p.name }}</h5>
+      <p class="card-text">
+        Price: {{ p.price | currency:'EGP' }}
+      </p>
+      <button (click)="openMenu(p.id)" class="btn btn-primary">View Details</button>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
