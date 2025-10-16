@@ -1,0 +1,17 @@
+<h1> Welcome to parent!</h1> 
+
+<input type="text"[(ngModel)]="username"/> 
+
+
+<app-child [username]="username"> </app-child> 
+
+<br>
+<p>-------------------------------------</p>
+
+
+<app-child (message)="receive($event)"></app-child>
+
+<p>hello {{message}}</p> 
+
+<button (click)="setValue()"> SEnd VALUE</button>
+<app-child/>
