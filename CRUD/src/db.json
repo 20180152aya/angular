@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "name": "Smartphone X15",
+      "category": "Electronics",
+      "price": 882,
+      "id": "1"
+    },
+    {
+      "name": "Iphone",
+      "category": "Electronices",
+      "price": 12,
+      "id": "5b49"
+    },
+    {
+      "id": "0eac",
+      "name": "Smart",
+      "category": "Accessories",
+      "price": 999
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+.admin-dashboard {
+  background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+  min-height: 100vh;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+.custom-table {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.mat-header-cell {
+  font-weight: bold;
+  background-color: #3f51b5;
+  color: #fff;
+  font-size: 15px;
+}
+
+.mat-cell {
+  color: white;
+  font-size: 14px;
+}
+
+.mat-row:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s;
+}
+
+button[mat-icon-button] {
+  color: white;
+  margin: 0 4px;
+  transition: transform 0.2s ease;
+}
+
+button[mat-icon-button]:hover {
+  transform: scale(1.1);
+}
+button[color="primary"] mat-icon {
+  color: yellow;
+}
+
+button[color="warn"] mat-icon {
+  color: #f44336; 
+}
+button[color="second"] mat-icon {
+  color: #3f51b5 ;
+}
